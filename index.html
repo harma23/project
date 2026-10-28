@@ -1,29 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Négy számítógép és a hozzájuk fűződő történetek.">
     <link rel="stylesheet" href="css/style.css">
-    <title>The Fleet</title>
+    <script src="js/kep-megnyitas.js" defer></script>
+    <title>A számítógépeim – A flotta</title>
 </head>
 <body>
-    <!-- <img src="img/FB_IMG_1770153678373.jpg" alt="placeholder"> -->
-    <div id="main"> 
-        <h1>A Flotta</h1>
-            <h2>Miért pont ezt a témát választottam?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet reiciendis adipisci recusandae? 
-                    Nulla nobis voluptatem consequatur nisi sed labore, deleniti possimus, eligendi dolor reiciendis vero assumenda, similique sequi! Debitis?</p>
+    <header class="weblap-header">
+        <div class="weblap-width">
+            <p class="homlokzatvagymicsodaisez">Gépek, azt cső</p>
+            <h1>A flotta</h1>
+            <p class="intro-text">Álszent szöveg, amit inkább kitöröltem</p>
+        </div>
+    </header>
 
-            <h2>Első Vezsenyzőnk: "Apám régi gépe"</h2>
-                    <div id="specs">
-                        <h3>Specifikációk</h3>
-                        <tr><td>CPU:</td><td></td>Intel Pentium 4 HT EE 3.40</tr>
-                        <tr>Alaplap:<td></td>ASUS P4S8X-X<td></td></tr>
-                        <tr>Memória:<td></td><td>KINGSTON KVR400X64C3A/1G 1GB DDR 400MHz</td></tr>
-                        <tr>Videókártya<td></td><td>ASUS ATI Radeon 9550 SE 256MB</td></tr>
-                        <tr>Háttértár:<td></td><td>MAXTOR DiamondMax PLUS 9 80GB 7.2K 2MB</td></tr>
-                    </div>
-            
-    </div>
+    <main class="weblap-width">
+        <section class="intro kartya">
+            <h2 id="intro-title">Miért ezt a témát választottam?</h2>
+            <p>
+                Azért választottam ezt a témát, mert érdekel, hogyan működnek a számítógépek.
+                Más dolgok is érdekelnek, de nem tudnám pontosan megmondani, miért éppen ezt
+                a témát választottam. Készíthettem volna egyedi felületet az alább említett
+                HomeGallery-hez is, de még nem tudok JavaScriptet írni, ezért azt az ötletet
+                egyelőre félretettem.
+            </p>
+            <p>Ami olyan alkatrész ami vagy nincs meg vagy nehezen hozzáférhető, annak helyettesítő képet készítettem, vagy letöltöttem az internet által legelsőnek feldobott találatot.</p>
+            <!--<p>
+                A bemutatóban azon gépekről/alkatrészekről helyezek el képet, amelyekhez
+                könnyen hozzáférek, illetve amelyek már nem működnek.
+            </p>-->
+        </section>
+
+        <section class="puter kartya" id="elso-gep">
+            <div class="reszfejlec">
+                <p class="homlokzatvagymicsodaisez">01. számítógép</p> <!--tiszteletted de tanárúr hogy nevezné ezt el?-->
+                <h2 id="elso-gep-cim">Apám régi gépe</h2>
+            </div>
+            <div class="specifikaciok">
+                <h3>Műszaki adatok</h3> <!--itt a tabulátorozással van némi probléma, de nem baj (kijavitva (nem működik a hosszú i betűm))-->
+                <table>
+                    <tbody>
+                        <tr><th scope="row">Processzor</th><td><span class="kep-trigger" tabindex="0">
+                                Intel Pentium 4 HT EE 3.40
+                                <span class="kep-ablak">
+                                    <img src="img/celerond.jpg" alt="Intel Pentium 4 HT EE 3.40">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Alaplap</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                ASUS P4S8X-X
+                                <span class="kep-ablak">
+                                    <img src="img/p4s8x.jpg" alt="ASUS P4S8X-X">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Memória</th><td><span class="kep-trigger" tabindex="0">
+                                3 × KINGSTON KVR400X64C3A/1G, 1 GB DDR 400 MHz
+                                <span class="kep-ablak">
+                                    <img src="img/kingstonkvr.jpg" alt="KINGSTON KVR400X64C3A/1G, 1 GB DDR 400 MHz">
+                                </span>
+                                                        </span></td></tr>
+                        <tr><th scope="row">Videókártya</th><td><span class="kep-trigger" tabindex="0">
+                                    ASUS ATI Radeon 9550 GE, 256 MB
+                                    <span class="kep-ablak">
+                                        <img src="img/9550ge.jpg" alt="ASUS ATI Radeon 9550 GE">
+                                    </span>
+                                </span></td></tr>
+                        <tr><th scope="row">Háttértár</th><td><span class="kep-trigger" tabindex="0">
+                                    MAXTOR DiamondMax PLUS 9, 80 GB, 7.2K, 2 MB;
+                                    <span class="kep-ablak">
+                                        <img src="img/maxtor.jpg" alt="MAXTOR DiamondMax PLUS 9">
+                                    </span>
+                                </span>LG DVD-RW</td></tr>
+                        <tr><th scope="row">Ház</th><td><span class="kep-trigger" tabindex="0">
+                                        Általános gépház, amelynek típusát senki sem tudja
+                                        <span class="kep-ablak">
+                                            <img src="img/aparegi.jpg" alt="Apám régi gépe">
+                                        </span>
+                                    </span></td></tr>
+                        <tr><th scope="row">Operációs rendszer</th><td>Windows XP Professional SP3</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="vakeralas">
+                <p>
+                    Ennek a számítógépnek nem ismerem a történetét, de annyit biztosan tudok,
+                    hogy apám régi gépe volt. Intel Pentium 4 HT EE 3.40 GHz-es processzor
+                    dolgozik benne. ASUS P4S8X-X alaplap, a három
+                    Kingston memóriamodul, elegendő volt a mindennapi
+                    feladatokhoz.
+                </p>
+                <p>
+                    A rajta futó rendszer nagyjából 20–22 éve került fel rá, így a régi
+                    játékok is megmaradtak rajta.
+                </p>
+                <p>
+                    Ez volt az első számítógép, amin én is játszottam, ezért sok szép
+                    emlékem fűződik hozzá. Néha még most is bekapcsolom egy kis nosztalgiázásra,
+                    de komolyabb feladatokra már nem használom.
+                </p>
+            </div>
+        </section>
+
+        <section class="puter kartya" id="masodik-gep">
+            <div class="reszfejlec">
+                <p class="homlokzatvagymicsodaisez">02. számítógép</p>
+                <h2 id="masodik-gep-cim">Az első saját számítógépem</h2>
+            </div>
+            <div class="specifikaciok">
+                <h3>Műszaki adatok</h3>
+                <table>
+                    <tbody>
+                        <tr><th scope="row">Processzor</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        AMD FX-8150    
+                                <span class="kep-ablak">
+                                    <img src="img/fx8150.jpg" alt="AMD FX 8150-es processzor">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Alaplap</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        ASUS M5A99FX PRO    
+                                <span class="kep-ablak">
+                                    <img src="img/m5a99.jpg" alt="ASUS M5A99FX PRO">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Memória</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        KINGSTON HyperX Beast, 2 × 4 GB DDR3 1333 MHz    
+                                <span class="kep-ablak">
+                                    <img src="img/hyperxbeast.jpg" alt="KINGSTON HyperX Beast, 2 × 4 GB">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Videókártya</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        GIGABYTE Radeon HD 7950 Windforce    
+                                <span class="kep-ablak">
+                                    <img src="img/7950.jpg" alt="GIGABYTE Radeon HD 7950 Windforce">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Háttértár</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        Seagate Desktop HDD, 2000 GB;    
+                                <span class="kep-ablak">
+                                    <img src="img/2tb.jpg" alt="Seagate Desktop HDD, 2000 GB">
+                                </span>
+                            </span>LG DVD-RW SATA</td></tr>
+                        <tr><th scope="row">Ház</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        Zalman Z11 PLUS    
+                                <span class="kep-ablak">
+                                    <img src="img/zalman_z11.jpg" alt="Zalman Z11 PLUS">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Operációs rendszer</th><td>Windows 7 Professional</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="vakeralas">
+                <p>
+                    Ezt a számítógépet ajándékba kaptam, de már nem emlékszem, hogy karácsonyra
+                    vagy születésnapomra. 2012–2013 körül szinte minden kiválóan futott. Emlékszem, egyszer ki akartuk próbálni a Feed The Beast egyik
+                    modcsomagját (minecraft modpack), amelyet egy YouTube-videóban láttunk. A videós nevére már nem
+                    emlékszem, és a régi Skype-fiókomhoz sem férek hozzá, mert Teams. Arra viszont igen,
+                    hogy a játék nálam a többiekéhez képest elég jól futott.
+                </p>
+                <p>
+                    A gép élete során a C meghajtót is cserélni kellett; egy, az eredetivel
+                    megegyező merevlemez került bele. A számítógép 2015-ben, egy nyári napon
+                    hibásodott meg: a tápegység felmondta a szolgálatot, és magával vitte a
+                    processzort, valamint az alaplapot is. A RAM, a merevlemez és a videókártya
+                    megmaradt. Az alaplap állapotában sem vagyok biztos, de azóta nem foglalkoztam
+                    vele, és nincs hozzá másik AM3+ processzorom hogy teszteljem.
+                </p>
+            </div>
+        </section>
+
+        <section class="puter kartya" id="harmadik-gep">
+            <div class="reszfejlec">
+                <p class="homlokzatvagymicsodaisez">03. számítógép</p>
+                <h2 id="harmadik-gep-cim">Az első saját építésű gépem – GS</h2>
+            </div>
+            <div class="specifikaciok">
+                <h3>Műszaki adatok</h3> 
+                <table>
+                    <tbody>
+                        <tr><th scope="row">Processzor</th><td><span class="kep-trigger" tabindex="0">
+                                    Intel Core i7-4790K    
+                            <span class="kep-ablak">
+                                <img src="img/i7.jpg" alt="Intel Core i7-4790K">
+                            </span></td></tr>
+                        <tr><th scope="row">Alaplap</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                    ASUS B85M-E  
+                            <span class="kep-ablak">
+                                <img src="img/b85m.jpg" alt="ASUS B85M-E">
+                            </span>
+                        </span></td></tr>
+                        <tr><th scope="row">Memória</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                    KINGSTON HyperX Beast, 2 × 4 GB DDR3 1333 MHz;    
+                            <span class="kep-ablak">
+                                <img src="img/hyperxbeast.jpg" alt="KINGSTON HyperX Beast, 2 × 4 GB DDR3 1333 MHz">
+                            </span>
+                        </span>később <span class="kep-trigger" tabindex="0">
+                                    4 × Crucial 8 GB DDR3L 1600 MHz CL11    
+                            <span class="kep-ablak">
+                                <img src="img/crutialct.jpg" alt="Crucial 8 GB DDR3L 1600 MHz CL11">
+                            </span></td></tr>
+                        <tr><th scope="row">Videókártya</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                    Gigabyte Radeon HD 7950 Windforce;    
+                            <span class="kep-ablak">
+                                <img src="img/7950.jpg" alt="Gigabyte Radeon HD 7950 Windforce">
+                            </span>
+                        </span> később
+                        <span class="kep-trigger" tabindex="0">
+                                    MSI GTX 960 4 GB OC;  
+                            <span class="kep-ablak">
+                                <img src="img/960.jpg" alt="MSI GTX 960 4 GB OC">
+                            </span>
+                        </span>
+                        <span class="kep-trigger" tabindex="0">
+                                    Gigabyte GTX 1060 Windforce;
+                            <span class="kep-ablak">
+                                <img src="img/1060.jpg" alt="Gigabyte GTX 1060 Windforce OC">
+                            </span>
+                        </span>
+                        <span class="kep-trigger" tabindex="0">
+                                    Gigabyte GTX 970 Windforce G1
+                            <span class="kep-ablak">
+                                <img src="img/970.jpg" alt="Gigabyte GTX 970 Windforce G1">
+                            </span>
+                        </span></td></tr>
+                        <tr><th scope="row">Háttértár</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        KINGSTON V300 120 GB SSD;
+                                <span class="kep-ablak">
+                                    <img src="img/v300.jpg" alt="KINGSTON V300 120 GB SSD">
+                                </span>
+                            </span>
+                            <span class="kep-trigger" tabindex="0">
+                                        Seagate Desktop HDD, 2000 GB;  
+                                <span class="kep-ablak">
+                                    <img src="img/2tb.jpg" alt="Seagate Desktop HDD, 2000 GB">
+                                </span>
+                            </span>
+                            <span class="kep-trigger" tabindex="0">
+                                         2 × Toshiba P300, 1 TB HDD
+                                <span class="kep-ablak">
+                                    <img src="img/p300.jpg" alt=" Toshiba P300, 1 TB HDD">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Ház</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        Zalman Z11 PLUS
+                                <span class="kep-ablak">
+                                    <img src="img/zalman_z11.jpg" alt="Zalman Z11 PLUS">
+                                </span>;
+                                <span class="kep-trigger" tabindex="0">
+                                            Valami generic ház    
+                                    <span class="kep-ablak">
+                                        <img src="img/gs.jpg" alt="Valami generic ház">
+                                    </span>
+                                </span>
+                            </span>
+                        </td></tr>
+                        <tr><th scope="row">Operációs rendszer</th><td>Windows 10 Professional; Arch Linux</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="vakeralas">
+                <p>
+                    Ezt a számítógépet az előző gép meghibásodása után kezdtük el összeállítani.
+                    2015 karácsonyára megkaptam hozzá az alkatrészeket, és még aznap összeraktam.
+                    Ez volt az első gép, amelyre én telepítettem az operációs rendszert is.
+                    Évekig használtam. 2017 körül tönkrement a HD 7950 ventilátorait tartó
+                    műanyag alkatrész, ezért beszereztem egy GTX 960-at. Később memóriát is
+                    bővítettem, majd Covid előtt GTX 1060-ra váltottam.
+                </p>
+                <p>
+                    Ez a számítógép ma is szolgál: „dedikált” szerverként működik, a GS
+                    (Game Server) nevet kapta, és Linux fut rajta. Főként játékszervereket
+                    üzemeltetek vele, de nem folyamatosan. Emellett egy <a href="https://github.com/xemle/home-gallery" target="_blank">HomeGallery</a> nevű,
+                    nyílt forráskódú alkalmazást is futtat, ahol az eddig készített képeim
+                    és videóim találhatók. Ha többet tanulok a weboldalkészítésről, szeretnék
+                    hozzá egyedi felületet készíteni.
+                </p>
+                <p>
+                    Három éve hozzám került egy gimnáziumi barátom GTX 970-es videókártyája.
+                    A három gyári ventilátorából kettő tönkrement, a harmadik pedig annyira
+                    csapágyas volt, hogy úgy szólt, mintha egy reptéren álltam volna. Kiderült,
+                    hogy a HD 7950 és a GTX 970 ventilátorai megegyeznek, ezért áttettem a
+                    működő ventilátort, majd később újakat szereztem be. Jelenleg ezen kártya van a számítógépben, aminek semmi értelme mert SSH-t használok ha épp be kell álltani valamit rajta.
+                </p>
+            </div>
+        </section>
+
+        <section class="puter kartya" id="negyedik-gep">
+            <div class="reszfejlec">
+                <p class="homlokzatvagymicsodaisez">04. számítógép</p>
+                <h2 id="negyedik-gep-cim">NASA Computer</h2>
+            </div>
+            <div class="specifikaciok">
+                <h3>Műszaki adatok</h3>
+                <table>
+                    <tbody>
+                        <tr><th scope="row">Processzor</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                    AMD Ryzen 9 5950X
+                            <span class="kep-ablak">
+                                <img src="img/ryzen9_simara.jpg" alt="AMD Ryzen 9 5950X">
+                            </span>
+                        </span></td></tr>
+                        <tr><th scope="row">Alaplap</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        MSI B450 GAMING PLUS MAX
+                                <span class="kep-ablak">
+                                    <img src="img/b450.jpg" alt="MSI B450 GAMING PLUS MAX">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Memória</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        KINGSTON HyperX Fury Beast, 2 × 16 GB DDR4-3200 MHz; később 4 × 32 GB DDR4-3200 MHz    
+                                <span class="kep-ablak">
+                                    <img src="img/fury.jpg" alt="KINGSTON HyperX Fury Beast, 2 × 16 GB DDR4-3200 MHz; később 4 × 32 GB DDR4-3200 MHz">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Videókártya</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        ASUS GTX 1080 Ti FE;
+                                <span class="kep-ablak">
+                                    <img src="img/1080_ti.jpg" alt="ASUS GTX 1080 Ti FE">
+                                </span>
+                            </span> később
+                            <span class="kep-trigger" tabindex="0">
+                                        Sapphire Pulse Radeon RX 6800 XT;
+                                <span class="kep-ablak">
+                                    <img src="img/rx6800xt.jpg" alt="Sapphire Pulse Radeon RX 6800 XT">
+                                </span>
+                            </span>
+                             <br>jelenleg <span class="kep-trigger" tabindex="0">
+                                        ASUS GTX 1080 Ti FE
+                                <span class="kep-ablak">
+                                    <img src="img/1080_ti.jpg" alt="ASUS GTX 1080 Ti FE">
+                                </span>
+                            </span>  és 
+                            <span class="kep-trigger" tabindex="0">
+                                        Gigabyte GTX 1060 Windforce OC   
+                                <span class="kep-ablak">
+                                    <img src="img/1060.jpg" alt="Gigabyte GTX 1060 Windforce OC">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Háttértár</th><td>
+                            <span class="kep-trigger" tabindex="0">
+                                        Samsung 980 PRO, 1 TB;
+                                <span class="kep-ablak">
+                                    <img src="img/nvm980.jpg" alt="Samsung 980 PRO, 1 TB">
+                                </span>
+                            </span> 
+                            <span class="kep-trigger" tabindex="0">
+                                        Seagate Desktop HDD, 2000 GB;
+                                <span class="kep-ablak">
+                                    <img src="img/2tb.jpg" alt="Seagate Desktop HDD, 2000 GB">
+                                </span>
+                            </span>
+                            <span class="kep-trigger" tabindex="0">
+                                        3 × Seagate Barracuda, 2 TB
+                                <span class="kep-ablak">
+                                    <img src="img/barracuda.jpg" alt="Seagate Barracuda, 2 TB">
+                                </span>
+                            </span></td></tr>
+                        <tr><th scope="row">Ház</th><td><span class="kep-trigger" tabindex="0">
+                                        Zalman Z11 PLUS;
+                                <span class="kep-ablak">
+                                    <img src="img/zalman_z11.jpg" alt="Zalman Z11 PLUS">
+                                </span>
+                            </span>
+                            <span class="kep-trigger" tabindex="0">
+                                        NZXT PHANTOM 420
+                                <span class="kep-ablak">
+                                    <img src="img/nasa_computer.jpg" alt="NZXT PHANTOM 420"></td></tr>
+                                </span>
+                            </span>
+                        <tr><th scope="row">Operációs rendszer</th><td>Windows 10 Pro; később Windows 11 Pro és Arch Linux</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="vakeralas">
+                <p>
+                    Ezt a számítógépet 2022 tavaszán kezdtem el építeni, mert az előző gépem
+                    már lassú volt, 3D modellezésre sem igazán volt alkalmas, és különböző
+                    hibakódokkal gyakran kékhalált kapott. Az évek során fokozatosan
+                    fejlesztettem, és elégedett vagyok azzal, ahová eljutott. Egy új videókártya
+                    azért jól jönne: a 6800 XT-t 2023 nyarán el kellett adnom, hogy megvehessem
+                    az 
+                    <span class="kep-trigger kep-auto"  tabindex="0">
+                            első autómat.
+                        <span class="kep-ablak">
+                            <img src="img/micra.jpg" alt="Nissan Micra K11 1998">
+                        </span>
+                    </span>
+                </p>
+                <p>
+                    A 1080 Ti kevésnek bizonyult a fent említett feladatokhoz, ezért mellé
+                    bekerült a korábbról visszamaradt GTX 1060 aminek feladata volt egy Samsung 940BF és egy Samsung 2333HD monitort meghajtani, meg egyébb encoding-val kapcsolatos dolgokon való munka. A eredeti másodlagos monitoromat később visszakaptam a
+                    húgomtól; ez egy ASUS BE24A, így most ismét két monitort használok.
+                </p>
+                <p>
+                    A memória története: 2023 nyarán, készletkisöpréskor 95 ezer forintért
+                    vásároltam meg. Azóta az árak az „AI-boom” miatt jelentősen megemelkedtek.
+                    A „NASA Computer” nevet egy kedves barátomtól kapta, és rajta is maradt.
+                </p>
+                <p>
+                    Ha újra VR-ozni szeretnék, beszerzek majd egy erősebb videókártyát és
+                    egy másik VR-headsetet, mert a jelenlegi tönkrement. 
+                    <span class="kep-trigger easter-egg"  tabindex="0">
+                            Forráskódból csalás megtalálni
+                        <span class="kep-ablak">
+                            <img src="img/w210_totalkar.jpg" alt="Mercedes-Benz W210 E220 CDI mid-facelift">
+                        </span>
+                    </span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="weblap-footer">
+        <h3>Elérhetőségek</h3>
+        <p> Email: harmatidan005@gmail.com</p>
+        <p>Telefon: +36 52 870 990 (hívhatja, ki van húzva)</p>
+    </footer>
 </body>
 </html>

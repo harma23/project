@@ -1,19 +1,295 @@
-body{
-    background-color: #333;
+:root {
+    color-scheme: light;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #28133b;
+    background: #2a0d4e;
+    line-height: 1.65;
 }
-#main {
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    /*saját rendszered betűtípusát használja*/
+
+* {
+    box-sizing: border-box;
 }
-h2{
-    text-indent: 30px;
+
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at center, #8109c7 0%, #5b1590 48%, #2a0d4e 100%);
+    background-attachment: fixed;
 }
-p{
-    text-indent: 60px;
+
+.weblap-width {
+    width: min(100% - 32px, 940px);
+    margin-inline: auto;
 }
-#specs{
-    background-color: black;
+
+.weblap-header {
+    padding: 72px 0 56px;
+    color: #fff;
+    text-align: center;
+}
+
+.weblap-header h1 {
+    margin: 0;
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -4px;
+}
+
+.intro-text {
+    margin: 16px 0 0;
+    color: #f0dcff;
+    font-size: 18px;
+}
+
+.homlokzatvagymicsodaisez {
+    margin: 0 0 6px;
+    color: #7425a5;
+    font-size: 12px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.weblap-header .homlokzatvagymicsodaisez {
+    color: #e5baff;
+}
+
+main {
+    display: grid;
+    gap: 24px;
+    padding-bottom: 48px;
+}
+
+.kartya {
+    overflow: hidden;
+    border: 1px solid #e6cef7;
+    border-radius: 6px;
+    background: #fffaff;
+    box-shadow: 0 16px 40px rgb(24 5 42 / 28%);
+}
+
+.intro {
+    padding: 28px;
+}
+
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+.intro h2,
+.reszfejlec h2 {
+    margin-bottom: 12px;
+    color: #321448;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+.intro p:last-child,
+.vakeralas p:last-child {
+    margin-bottom: 0;
+}
+
+.puter {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.reszfejlec {
+    grid-column: 1 / -1;
+    padding: 24px 28px 16px;
+    border-bottom: 1px solid #e7d4f4;
+    background: #f8efff;
+}
+
+.reszfejlec h2 {
+    margin-bottom: 0;
+}
+
+.specifikaciok,
+.vakeralas {
+    min-width: 0;
+    padding: 24px 28px;
+}
+
+.specifikaciok {
+    background: #321448;
+    color: #fffaff;
+}
+
+.specifikaciok h3 {
+    margin-bottom: 14px;
+    color: #e2baff;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+th,
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #624477;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+th {
+    width: 36%;
+    color: #e8d5f5;
+    font-weight: 650;
+}
+
+td {
+    color: #fffaff;
+}
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: 0;
+}
+
+.vakeralas p {
+    margin-bottom: 16px;
+}
+
+.weblap-footer {
+    padding: 24px 16px 32px;
+    color: #f0dcff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.weblap-footer p {
+    margin: 0;
+}
+a{
+    color: #28133b;
+    
+}
+a:hover{
+    color: #8109c7;
+}
+
+
+.kep-trigger {
+    position: relative;
+    display: inline-block;
+    color: #e8d5f5;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+
+.kep-trigger:focus-visible {
+    outline: 3px solid #8109c7;
+    outline-offset: 4px;
+}
+
+.kep-trigger {
+    cursor: pointer;
+}
+
+.kep-ablak {
+    display: none;
+}
+
+.kep-megjelenito {
+    display: grid;
+    gap: 20px;
+}
+
+.kep-vissza {
+    width: fit-content;
+    padding: 10px 16px;
+    border: 1px solid #e6cef7;
+    border-radius: 5px;
+    background: #fffaff;
+    color: #321448;
+    text-decoration: none;
+}
+
+.kep-vissza:hover {
+    background: #f8efff;
+}
+
+.kep-kartya {
+    padding: 24px;
+}
+
+.kep-kartya h2 {
+    margin: 0 0 20px;
+    color: #321448;
+    overflow-wrap: anywhere;
+}
+
+.kep-kartya img {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    object-fit:contain;
+    background: radial-gradient(ellipse at center, #8109c7 0%, #5b1590 100%);
+    background-attachment: fixed;
+    padding: 5px;
+}
+
+.kep-auto{
+    color:#28133b;
+    font-weight: normal;
+}
+.easter-egg{
+    color:#fffaff;
+    float: right;
+    text-decoration: none;
+}
+.easter-egg:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 700px) {
+    .weblap-header {
+        padding: 56px 0 40px;
+    }
+
+    .weblap-header h1 {
+        font-size: 48px;
+    }
+
+    .puter {
+        grid-template-columns: 1fr;
+    }
+
+    .reszfejlec {
+        grid-column: auto;
+    }
+
+    .specifikaciok,
+    .vakeralas {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .weblap-width {
+        width: min(100% - 16px, 940px);
+    }
+
+    .kartya {
+        border-radius: 5px;
+    }
+
+    th,
+    td {
+        padding-inline: 6px;
+        font-size: 13px;
+    }
 }
